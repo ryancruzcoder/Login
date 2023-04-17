@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/dashboard.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+    <link rel="website icon" type="png" href="{{ url_for('static', filename='arts/Favicon.png')}}">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="container sidebar">
+        <form action="/" method="get">
+            <input type="submit" value="Logout" class="btn logout">
+        </form>
+    </div>
+    <div class="container content">
+        <h1 id="bem-vindo">Dashboard</h1>
+        <div id="container">
+            <div class="quadros direita alto ">
+                
+            </div>
+            <div class="quadros direita  baixo">
+                
+            </div>
+            <div class="quadros esquerda alto">
+                
+            </div>
+            <div id="add-drop">
+                <input type="submit" value="" class="btn add sale">
+                <input type="submit" value="" class="btn drop sale">
+            </div>
+            <div class="quadros esquerda baixo">
+                <div id="btn-add-drop">
+                    <input type="submit" value="" class="btn addproduct">
+                    <input type="submit" value="" class="btn drop product">
+                </div>
+                <div id="base">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container foot">
+        <span id="email">User: {{ email }}</span>
+        <span id="create">&copy; By Ryan Cruz</span>
+        <a href="https://www.instagram.com/_ryancruzzz/" target="new"><img id="instagram" src="{{ url_for('static', filename='arts/instagram_icon.png')}}"></a>
+        <a href="https://www.linkedin.com/in/ryan-cruz-010398264/" target="new"><img id="linkedin" src="{{ url_for('static', filename='arts/Linkedin-icon.png')}}"></a>
+        <a href="https://github.com/ryancruzcoder" target="new"><img id="github" src="{{ url_for('static', filename='arts/Github.png')}}"></a>
+        
+    </div>
+</body>
+
+</html>

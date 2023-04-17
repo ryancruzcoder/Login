@@ -1,0 +1,153 @@
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #2c2c2c;
+    min-height: 100vh;
+}
+
+div#div-logo {
+    position: absolute;
+    left: 64vh;
+    top: -8vh;
+}
+
+div#container {
+    background-color: transparent;
+    width: 57vh;
+    height: 54vh;
+    position: relative;
+    left: 69vh;
+    top: 20vh;
+    border-radius: 14px;
+}
+
+h1#titulo {
+    color: white;
+    font-family: sans-serif;
+    position: absolute;
+    left: 14vh;
+    font-size: 10vh;
+}
+
+form {
+    position: absolute;
+}
+
+input.ipt {
+    position: absolute;
+    top: 29vh;
+    left: 9vh;
+    width: 36vh;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding-left: 3vh;
+    height: 5vh;
+
+}
+
+input.ipt:hover {
+    cursor: text;
+}
+
+input.ipt.password {
+    margin-top: 8vh;
+}
+
+input.ipt.register {
+    background-color: #0078e9;
+    height: 5.3vh;
+    width: 25.3vh;
+    color: white;
+    font-family: monospace;
+    top: 45vh;
+    left: 22.6vh;
+    transition: 0.5s;
+    z-index: 1;
+    padding: 0;
+}
+
+input.ipt.register:hover {
+    background-color: #004b91;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+span {
+    position: absolute;
+    top: 44vh;
+    left: 13vh;
+    color: gray;
+    font-family: monospace;
+    font-size: 10pt;
+    transition: 0.5s;
+}
+
+a#esqueceu-a-senha {
+    position: absolute;
+    top: 44vh;
+    left: 29vh;
+    text-decoration: none;
+    color: gray;
+    font-family: monospace;
+    transition: 0.5s;
+}
+
+a#esqueceu-a-senha:hover {
+    color: white;
+}
+
+input#remember-me {
+    position: absolute;
+    left: -4vh;
+    top: -0.2vh;
+    transition: 0.5s;
+}
+
+input#remember-me:hover {
+    cursor: pointer;
+}
+
+span:hover {
+    color: white;
+}
+
+div.credits{
+    position: absolute;
+    bottom: 2vh;
+    left: 2vh;
+    font-family: monospace;
+    color: white;
+}
+
+input#button {
+    position: absolute;
+    border: 3px solid #0078e9;
+    border-radius: 10px;
+    top: 45vh;
+    height: 5.5vh;
+    width: 11vh;
+    background: transparent;
+    color: white;
+    font-family: monospace;
+    left: 9vh;
+    transition: 0.5s;
+}
+
+input#button:hover {
+    background-color: #004b91;
+    border-color: #004b91;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.alert {
+    position: absolute;
+    color: #00ff4c;
+    font-family: sans-serif;
+    top: 25vh;
+    left: 9vh;
+}

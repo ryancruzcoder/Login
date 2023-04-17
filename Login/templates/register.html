@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/register.css">
+    <link rel="stylesheet" href="{{  url_for('static', filename='css/register.css') }}">
+    <link rel="website icon" type="png" href="{{ url_for('static', filename='arts/Favicon.png')}}">
+    <title>Register</title>
+</head>
+
+<body>
+    <div id="div-logo">
+        <img id="logo" src="../static/arts/Ryan Cruz.png" alt="logo">
+    </div>
+    <div id="container">
+        {% set alert = get_flashed_messages()%}
+        {% if alert:%}
+            <div class="alert">{{ alert[0] }}</div>
+        {% endif%}
+        <form action="/login" method="post">
+            <p>
+                <input type="email" name="ipt-email" class="ipt email" placeholder="EMAIL">
+            </p>
+            <p>
+                <input type="password" name="ipt-password" class="ipt password" placeholder="PASSWORD">
+            </p>
+            <input type="submit" value="REGISTER" class="ipt register">
+        </form>
+        <form action="/login" method="get">
+            <input type="submit" value="BACK" id="button">
+        </form>
+
+    </div>
+    <div class="credits">&copy; By Ryan Cruz</div>
+</body>
+
+</html>

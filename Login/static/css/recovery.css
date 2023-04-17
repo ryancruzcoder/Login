@@ -1,0 +1,76 @@
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #2c2c2c;
+    min-height: 100vh;
+}
+
+div#div-logo {
+    position: absolute;
+    left: 64vh;
+    top: -8vh;
+}
+
+div#container {
+    position: relative;
+    background-color: transparent;
+    width: 57vh;
+    height: 54vh;
+    position: relative;
+    left: 69vh;
+    top: 20vh;
+    border-radius: 14px;
+}
+
+input.ipt {
+    position: absolute;
+    top: 29vh;
+    left: 9vh;
+    width: 36vh;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding-left: 3vh;
+    height: 5vh;
+
+}
+
+input.ipt:hover {
+    cursor: text;
+}
+
+
+div.credits{
+    position: absolute;
+    bottom: 2vh;
+    left: 2vh;
+    font-family: monospace;
+    color: white;
+}
+
+
+.alert {
+    position: absolute;
+    color: #00ff4c;
+    font-family: monospace;
+    top: 25vh;
+    left: 9vh;
+}
+
+
+input.ipt.send {
+    background-color: #0078e9;
+    margin-top: 7vh;
+    width: 39.4vh;
+    color: white;
+    transition: 0.5s;
+}
+
+input.ipt.send:hover {
+    background-color: #004b91;
+    cursor: pointer;
+    transform: scale(1.1);
+}

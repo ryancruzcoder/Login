@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/recovery.css">
+    <link rel="stylesheet" href="{{  url_for('static', filename='css/recovery.css') }}">
+    <link rel="website icon" type="png" href="{{ url_for('static', filename='arts/Favicon.png')}}">
+    <title>Recovery</title>
+</head>
+
+<body>
+    <div id="div-logo">
+        <img id="logo" src="../static/arts/Ryan Cruz.png" alt="logo">
+    </div>
+    <div id="container">
+        {% set alert = get_flashed_messages()%}
+        {% if alert:%}
+            <div class="alert">{{ alert[0] }}</div>
+        {% endif%}
+        <form action="/code" method="post">
+            <p>
+                <input type="email" name="ipt-email" class="ipt email" placeholder="EMAIL">
+            </p>
+            <input type="submit" value="SEND" class="ipt send">
+        </form>
+    </div>
+    <div class="credits">&copy; By Ryan Cruz</div>
+</body>
+
+</html>

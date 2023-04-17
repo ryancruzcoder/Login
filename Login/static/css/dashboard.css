@@ -1,0 +1,569 @@
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    background-color: #2c2c2c;
+    grid-template-columns: 11% 50%;
+    grid-template-rows: 90% 10%;
+    grid-template-areas: 
+    'sidebar content content content content'
+    'foot foot foot foot foot';  
+}
+
+dialog::backdrop {
+    background-color: #0000009f;
+}
+
+dialog.modal {
+    border: none;
+    border-radius: 10px;
+    width: 50vh;
+    height: 20vh;
+}
+
+.btn.modal.close {
+    font-family: sans-serif;
+    background-color: red;
+    position: absolute;
+    left: 41vh;
+    bottom: 5.7vh;
+    height: 4.5vh;
+    border-radius: 10px;
+}
+
+input.btn.modal.send {
+    position: absolute;
+    bottom: -14vh;
+    left: 39vh;
+}
+
+.btn.modal.close:hover {
+    background-color: #880101;
+}
+
+.modal.title {
+    position: absolute;
+    background-color: #2c2c2c;
+    color: white;
+    font-family: sans-serif;
+    width: 52.2vh;
+    height: 4vh;
+    top: -4px;
+    left: 0;
+    text-align: left;
+    font-size: 12pt;
+    padding-top: 2vh;
+    padding-left: 2vh;
+}
+
+.modal.input {
+    position: absolute;
+    top: 7vh;
+}
+
+input.btn.modal.drop {
+    left: 29vh;
+    width: 9vh;
+    top: 2.5vh;
+}
+
+input.modal.input.name {
+    top: 2vh;
+    left: 0vh;
+}
+
+input.modal.input {
+    position: absolute;
+    width: 27vh;
+    top: 10vh;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #2c2c2c;
+    position: relative;
+}
+
+.content {
+    grid-area: content;
+    background-color: white;
+    position: relative;
+    background-color: rgb(209, 209, 209); 
+}
+
+.foot {
+    grid-area: foot;
+    background-color: #202020;
+    border-top: 1px solid gray;
+    position: relative;
+}
+
+span#email {
+    left: 2vh;
+    top: 2vh;
+    width: 15vh;
+}
+
+.quadros {
+    position: absolute;
+    width: 50vh;
+    height: 30vh;
+    box-shadow: 0vh 0vh 2vh rgba(0, 0, 0, 0.267);
+    border-radius: 10px;
+    transition: 0.5s;
+    background-color: white;
+    padding: 1vh;
+    font-family: sans-serif;
+    font-size: 3vh;
+    overflow: hidden;
+}
+
+.quadros.direita {
+    left: 10vh;
+}
+
+.quadros.esquerda {
+    left: 70vh;
+    width: 93vh;
+}
+
+.quadros.esquerda.alto {
+    width: 51vh;
+}
+
+.quadros.direita.baixo {
+    overflow-y: scroll;
+}
+
+.quadros.direita.baixo::-webkit-scrollbar-thumb {
+    background: gray;
+}
+.quadros.direita.baixo::-webkit-scrollbar-track {
+    background: transparent;
+}
+.quadros.direita.baixo::-webkit-scrollbar {
+    width: 1vh;
+}
+
+.quadros.baixo {
+    top: 55vh;
+}
+
+.quadros.alto {
+    top: 20vh;
+}
+
+.quadros:hover {
+    transform: scale(1.1);
+}
+
+h1#bem-vindo {
+    position: absolute;
+    font-family: sans-serif;
+    left: 10vh;
+    top: 0vh;
+    font-size: 7vh;
+}
+
+.btn {
+    background-color: #0078e9;
+    transition: 0.5s;
+    color: white;
+    font-family: monospace;
+    border: none;
+    border-radius: 10px;
+    width: 12vh;
+    height: 4vh;
+    position: absolute;
+    bottom: 3vh;
+    left: 3vh;
+    cursor: pointer;
+}
+
+.btn.logout {
+   background-color: red;
+   left: 4.5vh;
+}
+
+.btn.logout:hover {
+    background-color: rgb(150, 0, 0);
+    transform: scale(1.1);
+ }
+
+.btn.add {
+    position: absolute;
+    right: 1vh;
+    top: 1vh;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #004b91;
+}
+
+.money {
+    position: absolute;
+    right: 3vh;
+    top: 3vh;
+    font-size: 25pt;
+    font-family: sans-serif;
+    color: #00aa0e;
+}
+
+table.recent.namemoney {
+    position: absolute;
+    top: 13vh;
+    font-size: 11pt;
+    left: 2vh;
+    width: 48vh;
+    height: 18vh;
+}
+
+table.recent.namemoney.extract {
+    top: 7vh;
+}
+
+td#nome {
+    width: 35vh;
+    border-bottom: 1px solid #80808061;
+    padding-left: 1vh;
+}
+
+td#money {
+    border-bottom: 1px solid #80808061;
+    text-align: right;
+}
+
+tr {
+    height: 4.5vh;
+}
+
+tr:hover {
+    background-color: rgba(128, 128, 128, 0.219);
+}
+
+div#grafic {
+    position: absolute;
+    top: 7vh;
+    width: 90vh;
+    height: 23vh;
+    left: 2.3vh;
+}
+
+div#add-drop {
+    position: absolute;
+    right: 47vh;
+    top: 19vh;
+}
+
+.btn.add {
+    width: 30vh;
+    height: 14.8vh;
+    font-size: 12pt;
+    font-family: sans-serif;
+}
+
+.btn.drop.sale {
+    background-color: red;
+    top: 18vh;
+    width: 30.2vh;
+    height: 15vh;
+}
+
+.btn.drop.sale:hover {
+    background-color: #880101;
+}
+
+div#btn-add-drop {
+    position: absolute;
+    top: 9vh;
+    right: 17vh;
+}
+
+input.btn.addproduct {
+    position: absolute;
+    left: -21vh;
+    top: -7vh;
+    width: 22vh;
+}
+
+input.btn.drop {
+    background-color: red;
+}
+
+input.btn.drop:hover {
+    background-color: #880101;
+}
+
+div#base {
+    position: absolute;
+    top: 9vh;
+    left: 2vh;
+    width: 90.5vh;
+    height: 22vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+div#base::-webkit-scrollbar-thumb {
+    background: gray;
+}
+div#base::-webkit-scrollbar-track {
+    background: transparent;
+}
+div#base::-webkit-scrollbar {
+    width: 1vh;
+}
+
+table.table.products {
+    position: absolute;
+    font-size: 11pt;
+    width: 88vh;
+    height: 18vh;
+}
+
+.td.product.id {
+    border-bottom: 1px solid #80808061;
+}
+
+.td.product.name {
+    border-bottom: 1px solid #80808061;
+}
+
+.td.product.value {
+    border-bottom: 1px solid #80808061;
+    text-align: right;
+}
+
+.td.product.sales {
+    border-bottom: 1px solid #80808061;
+    text-align: right;
+    width: 7vh;
+}
+
+.td.product.profit {
+    border-bottom: 1px solid #80808061;
+    text-align: right;
+}
+
+span {
+    position: absolute;
+    text-decoration: none;
+    color: gray;
+    left: 90vh;
+    top: 2vh;
+    font-family: sans-serif;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+span#create:hover {
+    cursor: text;
+}
+
+img#instagram {
+    position: absolute;
+    width: 5vh;
+    height: 5vh;
+    right: 2vh;
+    top: 3vh;
+    transition: 0.5s;
+}
+
+img#instagram:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+img#linkedin {
+    position: absolute;
+    width: 5vh;
+    height: 5vh;
+    right: 10vh;
+    top: 3vh;
+    transition: 0.5s;
+}
+
+img#linkedin:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+li {
+    color: white;
+    font-family: sans-serif;
+    list-style: none;
+    margin-top: 3vh;
+    transition: 0.5s;
+    display: flex;
+    opacity: 35%;
+}
+
+li#dashboard {
+    color: white;
+}
+
+li:hover {
+    cursor: pointer;
+    color: white;
+    opacity: 100%;
+}
+
+nav {
+    position: absolute;
+    left: -3vh;
+    top: 17vh;
+}
+
+img#icone-empresa {
+    position: absolute;
+    width: 12vh;
+    height: 12vh;
+    left: 4.5vh;
+    top: 3vh;
+}
+
+img.icon {
+    height: 4vh;
+    margin-right: 2vh;
+}
+
+span#email:hover {
+    color: #0078e9;
+}
+
+input.modal.input.id {
+    top: 4vh;
+}
+
+input.btn.modal.drop {
+    left: 29vh;
+    width: 9vh;
+    top: 2.5vh;
+}
+
+input.btn.modal.close.drop {
+    height: 4vh;
+    left: 41vh;
+    top: 9.5vh;
+    width: 12vh;
+}
+
+dialog.modal.drop {
+    height: 14vh;
+}
+
+input.btn.modal.add.product {
+    left: 39vh;
+    width: 12vh;
+    height: 4vh;
+    top: 22vh;
+    font-size: 10pt;
+}
+
+dialog.modal.product.add {
+    height: 30vh;
+}
+
+.modal.inputs.add {
+    position: absolute;
+    top: 7vh;
+}
+
+input.btn.modal.close.drop.product {
+    top: 24vh;
+}
+
+input.modal.input.product.profit_total {
+    top: 20vh;
+}
+
+input.modal.input.product.quant_sales {
+    top: 14vh;
+}
+
+input.modal.input.product.value_un {
+    top: 8vh;
+}
+
+.modal.inputs.drop {
+    position: absolute;
+    top: 7vh;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.botao-enviar {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+.imagem {
+    height: 4.5vh;
+    margin-right: 10px;
+    position: absolute;
+    top: 20vh;
+    left: 5vh;
+    opacity: 35%;
+}
+  
+.palavra-contact {
+    font-size: 13pt;
+    left: 11.4vh;
+    top: 21vh;
+    color: white;
+}
+
+img.imagem.dashboard {
+    top: 11.2vh;
+    opacity: 75%;
+}
+
+span.palavra-dashboard {
+    left: 11.3vh;
+    font-size: 14pt;
+    top: 12vh;
+    color: white;
+}
+
+img.imagem.home {
+    top: 2vh;
+    opacity: 75%;
+}
+
+span.palavra-home {
+    left: 11.3vh;
+    font-size: 14pt;
+    top: 3vh;
+    color: white;
+}
+
+span#email:hover {
+    transform: scale(1.1);
+}
+
+img#github {
+    position: absolute;
+    width: 5vh;
+    height: 5vh;
+    right: 18vh;
+    top: 3vh;
+    transition: 0.5s;
+}
+
+img#github:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
