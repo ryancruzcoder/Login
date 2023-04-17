@@ -1,4 +1,4 @@
-<h1>Bem vindo ao repositório da <a href="https://www.instagram.com/_ryancruzzz/">Ryan Cruz</a>!</h1>
+<h1>Bem vindo ao repositório do <a href="https://www.instagram.com/_ryancruzzz/">Ryan Cruz</a>!</h1>
 <p dir="auto">Descubra como o poder da programação pode <strong>mudar o futuro</strong> e a <strong>sua vida!</strong></p>
 <p dir="auto">Redes Sociais:</p>
 <ul dir="auto">
