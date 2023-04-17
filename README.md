@@ -15,10 +15,10 @@
 <ol dir="auto">
 <li>
 <p dir="auto">Clique no botão verde para fazer o download</p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/devaprender/bot_whatsapp_envio_mensagens/blob/master/images/step1.png"><img src="/devaprender/bot_whatsapp_envio_mensagens/raw/master/images/step1.png" alt="step1" style="max-width: 100%;"></a></p>
+<p dir="auto"><img src="./source/static/arts/step1.png" alt="Step1"style="max-width: 100%;"></p>
 </li>
 <li>
 <p dir="auto">Clique em Download ZIP</p>
-<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/devaprender/bot_whatsapp_envio_mensagens/blob/master/images/step2.png"><img src="/devaprender/bot_whatsapp_envio_mensagens/raw/master/images/step2.png" alt="step2" style="max-width: 100%;"></a></p>
+<p dir="auto"<p dir="auto"><img src="./source/static/arts/step2.png" alt="Step2"style="max-width: 100%;"></p></p>
 </li>
 </ol>
