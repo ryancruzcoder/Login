@@ -9,7 +9,7 @@ from flask import Flask, render_template, request, flash, get_flashed_messages, 
 
 # 1. Conexão com Banco de Dados
 
-url_db = 'postgresql://postgres:XXXXXX@127.0.0.1:5432/login'
+url_db = 'postgresql://postgres:SuaSenhaAqui@127.0.0.1:5432/login'
 print('Conecting...')
 engine = create_engine(url_db)
 Base = declarative_base()
@@ -78,7 +78,7 @@ def addproduct(name, value_un, quant_sales, profit_total):
 def getemail(name, email_c, subject, message):
     outlook = win32.Dispatch("outlook.Application",pythoncom.CoInitialize())
     email = outlook.CreateItem(0)
-    email.To = 'ryancruz.assessoria@gmail.com'
+    email.To = 'seuemaildecontato@gmail.com'
     email.Subject = subject
     email.HTMLBody = f'''
     <p><h4>Nome:</h4> {name}</p>
