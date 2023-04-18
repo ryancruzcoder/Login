@@ -7,16 +7,16 @@ from sqlalchemy.orm import declarative_base, sessionmaker
 from sqlalchemy import Column, Integer, ForeignKey, CHAR, String, Sequence, create_engine, Float
 from flask import Flask, render_template, request, flash, get_flashed_messages, redirect, url_for, session
 
+# 1. Conexão com Banco de Dados
 
-
-url_db = 'postgresql://postgres:Ry2006$an@127.0.0.1:5432/login'
+url_db = 'postgresql://postgres:XXXXXX@127.0.0.1:5432/login'
 print('Conecting...')
 engine = create_engine(url_db)
 Base = declarative_base()
 Session = sessionmaker(bind=engine)
 writer = Session()
 
-
+# 2. Configuração do Flask
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
 app.secret_key = 'Construai2515'
@@ -24,7 +24,7 @@ app.config['SESSION_PERMANENT'] = True
 app.config['SESSION_TYPE'] = 'filesystem'
 wallet = 0
 
-
+# 3. Criação de Tabelas
 
 class TableLogin(Base):
     __tablename__ = 'usuarios'
@@ -55,7 +55,7 @@ class TableProducts(Base):
 Base.metadata.create_all(engine)
 print('Created Tables!')
 
-
+# 4. Funções
 
 def adduser(email, password):
     writer.add_all([TableLogin(email=email, password=password)])
@@ -89,6 +89,8 @@ def getemail(name, email_c, subject, message):
     '''
     email.Send()
 
+
+
 def sendemailnotice(name, email_c, subject):
     outlook = win32.Dispatch("outlook.Application",pythoncom.CoInitialize())
     email = outlook.CreateItem(0)
@@ -100,6 +102,8 @@ def sendemailnotice(name, email_c, subject):
     <p>Estamos analisando e em até 3 dias úteis daremos retorno. Obrigado!</p>
     '''
     email.Send()
+
+
 
 def sendemail(email_c, code):
     outlook = win32.Dispatch("outlook.Application",pythoncom.CoInitialize())
@@ -113,7 +117,7 @@ def sendemail(email_c, code):
     '''
     email.Send()
 
-
+# 4. Rotas
 
 @app.route('/newpassword/', methods=['POST'])
 def codeverification(code=1):
@@ -273,6 +277,8 @@ def addnewproduct():
         wallet = wallet + linha.value
     return render_template('dashboard.html', email=email, wallet=wallet, tablesales=tablesales, tableproducts=tableproducts)
 
+
+
 @app.route('/dashboard/delete/product/', methods=['POST'])
 def deleteproduct():
     email = request.form.get('client-email')
@@ -285,6 +291,8 @@ def deleteproduct():
     for linha in tablesales:
         wallet = wallet + linha.value
     return render_template('dashboard.html', email=email, wallet=wallet, tablesales=tablesales, tableproducts=tableproducts)
+
+
 
 @app.route('/contact/', methods=['POST'])
 def contact():
@@ -300,11 +308,11 @@ def contact():
         email = request.form.get('email_c')
         return render_template('contact.html', email=email)
 
-
+# 5. Executação do Flask
 
 if __name__ == '__main__':
     app.run(debug=True)
 
-
+# 6. Enviando atualizações ao Banco de Dados
 
 writer.commit()

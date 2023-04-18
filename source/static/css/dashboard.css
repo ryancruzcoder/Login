@@ -222,14 +222,7 @@ span#email:hover {
     top: 20vh;
     left: 5vh;
     opacity: 35%;
-}
-  
-.palavra-contact {
-    font-size: 13pt;
-    left: 11.4vh;
-    top: 21vh;
-    color: white;
-}
+} 
 
 span#email:hover {
     transform: scale(1.1);
