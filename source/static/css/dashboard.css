@@ -14,76 +14,6 @@ body {
     'foot foot foot foot foot';  
 }
 
-dialog::backdrop {
-    background-color: #0000009f;
-}
-
-dialog.modal {
-    border: none;
-    border-radius: 10px;
-    width: 50vh;
-    height: 20vh;
-}
-
-.btn.modal.close {
-    font-family: sans-serif;
-    background-color: red;
-    position: absolute;
-    left: 41vh;
-    bottom: 5.7vh;
-    height: 4.5vh;
-    border-radius: 10px;
-}
-
-input.btn.modal.send {
-    position: absolute;
-    bottom: -14vh;
-    left: 39vh;
-}
-
-.btn.modal.close:hover {
-    background-color: #880101;
-}
-
-.modal.title {
-    position: absolute;
-    background-color: #2c2c2c;
-    color: white;
-    font-family: sans-serif;
-    width: 52.2vh;
-    height: 4vh;
-    top: -4px;
-    left: 0;
-    text-align: left;
-    font-size: 12pt;
-    padding-top: 2vh;
-    padding-left: 2vh;
-}
-
-.modal.input {
-    position: absolute;
-    top: 7vh;
-}
-
-input.btn.modal.drop {
-    left: 29vh;
-    width: 9vh;
-    top: 2.5vh;
-}
-
-input.modal.input.name {
-    top: 2vh;
-    left: 0vh;
-}
-
-input.modal.input {
-    position: absolute;
-    width: 27vh;
-    top: 10vh;
-    border: none;
-    border-bottom: 1px solid gray;
-}
-
 .sidebar {
     grid-area: sidebar;
     background-color: #2c2c2c;
@@ -135,20 +65,6 @@ span#email {
 
 .quadros.esquerda.alto {
     width: 51vh;
-}
-
-.quadros.direita.baixo {
-    overflow-y: scroll;
-}
-
-.quadros.direita.baixo::-webkit-scrollbar-thumb {
-    background: gray;
-}
-.quadros.direita.baixo::-webkit-scrollbar-track {
-    background: transparent;
-}
-.quadros.direita.baixo::-webkit-scrollbar {
-    width: 1vh;
 }
 
 .quadros.baixo {
@@ -207,55 +123,6 @@ h1#bem-vindo {
     background-color: #004b91;
 }
 
-.money {
-    position: absolute;
-    right: 3vh;
-    top: 3vh;
-    font-size: 25pt;
-    font-family: sans-serif;
-    color: #00aa0e;
-}
-
-table.recent.namemoney {
-    position: absolute;
-    top: 13vh;
-    font-size: 11pt;
-    left: 2vh;
-    width: 48vh;
-    height: 18vh;
-}
-
-table.recent.namemoney.extract {
-    top: 7vh;
-}
-
-td#nome {
-    width: 35vh;
-    border-bottom: 1px solid #80808061;
-    padding-left: 1vh;
-}
-
-td#money {
-    border-bottom: 1px solid #80808061;
-    text-align: right;
-}
-
-tr {
-    height: 4.5vh;
-}
-
-tr:hover {
-    background-color: rgba(128, 128, 128, 0.219);
-}
-
-div#grafic {
-    position: absolute;
-    top: 7vh;
-    width: 90vh;
-    height: 23vh;
-    left: 2.3vh;
-}
-
 div#add-drop {
     position: absolute;
     right: 47vh;
@@ -301,57 +168,6 @@ input.btn.drop:hover {
     background-color: #880101;
 }
 
-div#base {
-    position: absolute;
-    top: 9vh;
-    left: 2vh;
-    width: 90.5vh;
-    height: 22vh;
-    overflow: hidden;
-    overflow-y: scroll;
-}
-
-div#base::-webkit-scrollbar-thumb {
-    background: gray;
-}
-div#base::-webkit-scrollbar-track {
-    background: transparent;
-}
-div#base::-webkit-scrollbar {
-    width: 1vh;
-}
-
-table.table.products {
-    position: absolute;
-    font-size: 11pt;
-    width: 88vh;
-    height: 18vh;
-}
-
-.td.product.id {
-    border-bottom: 1px solid #80808061;
-}
-
-.td.product.name {
-    border-bottom: 1px solid #80808061;
-}
-
-.td.product.value {
-    border-bottom: 1px solid #80808061;
-    text-align: right;
-}
-
-.td.product.sales {
-    border-bottom: 1px solid #80808061;
-    text-align: right;
-    width: 7vh;
-}
-
-.td.product.profit {
-    border-bottom: 1px solid #80808061;
-    text-align: right;
-}
-
 span {
     position: absolute;
     text-decoration: none;
@@ -395,120 +211,9 @@ img#linkedin:hover {
     transform: scale(1.1);
 }
 
-li {
-    color: white;
-    font-family: sans-serif;
-    list-style: none;
-    margin-top: 3vh;
-    transition: 0.5s;
-    display: flex;
-    opacity: 35%;
-}
-
-li#dashboard {
-    color: white;
-}
-
-li:hover {
-    cursor: pointer;
-    color: white;
-    opacity: 100%;
-}
-
-nav {
-    position: absolute;
-    left: -3vh;
-    top: 17vh;
-}
-
-img#icone-empresa {
-    position: absolute;
-    width: 12vh;
-    height: 12vh;
-    left: 4.5vh;
-    top: 3vh;
-}
-
-img.icon {
-    height: 4vh;
-    margin-right: 2vh;
-}
-
 span#email:hover {
     color: #0078e9;
 }
-
-input.modal.input.id {
-    top: 4vh;
-}
-
-input.btn.modal.drop {
-    left: 29vh;
-    width: 9vh;
-    top: 2.5vh;
-}
-
-input.btn.modal.close.drop {
-    height: 4vh;
-    left: 41vh;
-    top: 9.5vh;
-    width: 12vh;
-}
-
-dialog.modal.drop {
-    height: 14vh;
-}
-
-input.btn.modal.add.product {
-    left: 39vh;
-    width: 12vh;
-    height: 4vh;
-    top: 22vh;
-    font-size: 10pt;
-}
-
-dialog.modal.product.add {
-    height: 30vh;
-}
-
-.modal.inputs.add {
-    position: absolute;
-    top: 7vh;
-}
-
-input.btn.modal.close.drop.product {
-    top: 24vh;
-}
-
-input.modal.input.product.profit_total {
-    top: 20vh;
-}
-
-input.modal.input.product.quant_sales {
-    top: 14vh;
-}
-
-input.modal.input.product.value_un {
-    top: 8vh;
-}
-
-.modal.inputs.drop {
-    position: absolute;
-    top: 7vh;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-.botao-enviar {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-  }
   
 .imagem {
     height: 4.5vh;
@@ -523,30 +228,6 @@ a {
     font-size: 13pt;
     left: 11.4vh;
     top: 21vh;
-    color: white;
-}
-
-img.imagem.dashboard {
-    top: 11.2vh;
-    opacity: 75%;
-}
-
-span.palavra-dashboard {
-    left: 11.3vh;
-    font-size: 14pt;
-    top: 12vh;
-    color: white;
-}
-
-img.imagem.home {
-    top: 2vh;
-    opacity: 75%;
-}
-
-span.palavra-home {
-    left: 11.3vh;
-    font-size: 14pt;
-    top: 3vh;
     color: white;
 }
 

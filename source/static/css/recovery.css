@@ -42,7 +42,6 @@ input.ipt:hover {
     cursor: text;
 }
 
-
 div.credits{
     position: absolute;
     bottom: 2vh;
@@ -51,7 +50,6 @@ div.credits{
     color: white;
 }
 
-
 .alert {
     position: absolute;
     color: #00ff4c;
@@ -59,7 +57,6 @@ div.credits{
     top: 25vh;
     left: 9vh;
 }
-
 
 input.ipt.send {
     background-color: #0078e9;
