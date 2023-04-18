@@ -9,7 +9,7 @@ from flask import Flask, render_template, request, flash, get_flashed_messages, 
 
 # 1. Conexão com Banco de Dados
 
-url_db = 'postgresql://postgres:Ry2006$an@127.0.0.1:5432/login'
+url_db = 'postgresql://postgres:XXXXXX@127.0.0.1:5432/login'
 print('Conecting...')
 engine = create_engine(url_db)
 Base = declarative_base()
