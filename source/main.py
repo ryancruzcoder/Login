@@ -19,7 +19,7 @@ writer = Session()
 # 2. Configuração do Flask
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
-app.secret_key = 'Construai2515'
+app.secret_key = 'SuaSenha'
 app.config['SESSION_PERMANENT'] = True
 app.config['SESSION_TYPE'] = 'filesystem'
 wallet = 0
